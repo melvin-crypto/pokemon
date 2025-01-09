@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { getPokemons } from './utils/api';
-import PokemonCard from './components/pokemonCard';
-import PokedexLayout from './components/pokedexLayout';
+import { getPokemons } from '../utils/api';
+import PokemonCard from '../components/pokemonCard';
+import PokedexLayout from '../components/pokedexLayout';
 
 const Page = () => {
   const [pokemons, setPokemons] = useState<any[]>([]);
