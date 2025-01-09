@@ -16,12 +16,12 @@ const Filter = ({ filters, setFilters, setPage, setLimit }: { filters: any, setF
   }, []);
 
   const handleFilterChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFilters(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    setFilters((prev: any) => ({ ...prev, [e.target.name]: e.target.value }));
     setPage(1);
   };
 
   const handleTypeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setFilters(prev => ({ ...prev, type: e.target.value }));
+    setFilters((prev : any) => ({ ...prev, type: e.target.value }));
     setPage(1);
   };
 
