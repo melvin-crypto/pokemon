@@ -5,7 +5,7 @@ export const getPokemons = async ({ page, limit, filters }: { page: number, limi
     return data;
   };
   
-  export const getPokemonDetails = async (id: string) => {
+  export const getPokemonDetails = async (id: string | string[]) => {
     const res = await fetch(`https://nestjs-pokedex-api.vercel.app/pokemons/${id}`);
     const data = await res.json();
     return data;
